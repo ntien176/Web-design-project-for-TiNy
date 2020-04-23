@@ -4,9 +4,8 @@ body {
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; 
 }
-
 /* Global */
 .container {
     width: 80%;
@@ -32,7 +31,8 @@ header {
 header li {
     list-style-type: none;
     float: left;
-    padding: 0 20px
+    padding: 0 20px;
+    text-align: center;
 }
 header li a {
     color: #ffffff;
@@ -86,29 +86,27 @@ header h1 {
 }
 #newsletter h1 {
     color:#ffffff;
-    float: left;
-    margin: 22px;
+    float: left; 
 }
 #newsletter form {
-    color:#ffffff;
+    color:#ffffff; 
+    margin-top: 1.2em;
     float: right;
-    margin-top: 20px;
+    width: 300px;
 }
-#newsletter input[type='email']{
-    height: 25px;
-    width: 250px;
-    padding: 4px
-  
-}
-#newsletter button.button-1 {
-    height: 37px;
-    width: 111px;
-    color:#FFF;
-    background-color: #E8491D;
-    border: 0;
-    letter-spacing: 1px;
-}
+#newsletter form input[type="email"]{
 
+    height: 2em;
+    width: 65%
+}
+#newsletter form button.button-1{
+ 
+    margin:0 0 0 1%;
+    height: 2.45em;
+    width: 30%;
+    background-color: #E8491D;
+    border:0
+}
 /* section: boxer */
 #boxes {
     margin-top: 20px;
@@ -116,9 +114,11 @@ header h1 {
 #boxes .box {
     box-sizing: border-box;
     padding: 10px;
-    width: 33.33%;
+    width: 33%;
     float: left;
     text-align: center;
+    border: 0.2px solid #DDD;
+    margin: 0 0.1%;
 }
 #boxes .box img {
     width: 30%;
@@ -148,21 +148,20 @@ footer {
 }
 
 /* Services */
-div.main-col .box {
+.main-col .box {
     background-color: #E6E6E6;
     width: 65%;
     float: left;
     padding: 20px 20px;
     margin-bottom: 4px;
     border: 0.5px solid rgb(177, 177, 177);
- 
 }
-.aside-box {
+ 
+.main-col .aside-box {
     margin-top: 10px;
     float: right;
     background-color: #35424A;
     color: #FFF;
-    padding: 20px 20px;
     width: 25%;
 }
 #services button {
@@ -173,14 +172,18 @@ div.main-col .box {
     border: 0;
     letter-spacing: 1px;
 }
-#services  #name, #services #email{
+#services  #name, #services #email, #services #mess {
     height: 27px;
-    width: 270px;
+    width: 90%; 
+    margin: 0 5% 3% 5%;
 
 }
-#services textarea{
+.aside-box label, form button{
+    margin: 0 0 5% 5%;
+}
+#services #mess{
     height: 40px;
-    width: 270px;
+ 
 }
 #services h3.h3-form {
     text-align: center;
@@ -188,3 +191,39 @@ div.main-col .box {
 #services input {
     margin-bottom: 5px;
 }
+
+/* Media queris */
+@media(max-width:768px){
+    #branding {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    nav, nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-right: 5%;
+
+    }
+    #newsletter h1, #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+     #newsletter form input[type="email"] ,#newsletter form button.button-1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: 1% 0;
+
+    }
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2%;
+
+    }
+}
+  
