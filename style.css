@@ -24,7 +24,7 @@ header {
     color: #ffffff;
     padding-top: 10px;
     min-height: 70px;
-    position: sticky;
+    /* position: sticky; */
     top:0
 }
 
@@ -152,13 +152,13 @@ footer {
     background-color: #E6E6E6;
     width: 65%;
     float: left;
-    padding: 20px 20px;
+    padding: 1em;
     margin-bottom: 4px;
     border: 0.5px solid rgb(177, 177, 177);
 }
  
 .main-col .aside-box {
-    margin-top: 10px;
+    margin-top: 0.5em;
     float: right;
     background-color: #35424A;
     color: #FFF;
@@ -166,7 +166,7 @@ footer {
 }
 #services button {
     height: 37px;
-    width: 120px;
+    width: 40%;
     color:#FFF;
     background-color: #E8491D;
     border: 0;
@@ -241,6 +241,32 @@ footer {
         width: 100%;
         margin: 0 auto
 
+    }
+    /* Services */
+    #services .aside-box, #services  .box {
+        float: none;
+        text-align: center;
+        width: 90%; 
+        margin: 0 auto;
+    }
+    #services  .box {
+        margin-bottom: 2px;
+    }
+    .aside-box form {
+        float: none;
+        text-align: left;
+        width: 97%;  
+    }
+    .aside-box form button[type="submit"] {
+        width: 100%;
+        margin: 0 25% 2% 30%;
+        padding: 0 
+    }
+    .aside-box h3{
+        padding: 25px 0 0 0;
+    }
+    #services h3 {
+        text-align: center;
     }
 }
   
