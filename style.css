@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #35424A;
+    border-bottom: 3.2px solid #E8491D;
+    color: #ffffff;
+    padding-top: 10px;
+    min-height: 70px;
+    position: sticky;
+    top:0
+}
+
+header li {
+    list-style-type: none;
+    float: left;
+    padding: 0 20px
+}
+header li a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-size: 16px;
+    text-transform: uppercase;
+}
+header nav {
+    float: right;
+    margin-top: 25px;
+}
+header #branding {
+    float: left;
+}
+header #branding span {
+    color:#E8491D
+}
+header li.current a {
+    color: #E8491D;
+}
+header li.current a:hover {
+    color: #DDD;
+}
+header a:hover {
+    color: #CCC;
+    font-weight: bold;
+}
+header h1 {
+    margin: 18px
+}
+/* Section: Showcase */
+#showcase {
+    background-image: url(./showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -450px;
+    min-height: 400px;
+    text-align: center;
+    color: #ffffff;
+}
+#showcase h1 {
+    font-size: 55px;
+    margin-top: 100px;
+}
+#showcase p {
+    font-size: 20px;
+}
+
+/* Section: Newsletter */
+#newsletter {
+    background-color: #35424A;
+}
+#newsletter h1 {
+    color:#ffffff;
+    float: left;
+    margin: 22px;
+}
+#newsletter form {
+    color:#ffffff;
+    float: right;
+    margin-top: 20px;
+}
+#newsletter input[type='email']{
+    height: 25px;
+    width: 250px;
+    padding: 4px
+  
+}
+#newsletter button.button-1 {
+    height: 37px;
+    width: 111px;
+    color:#FFF;
+    background-color: #E8491D;
+    border: 0;
+    letter-spacing: 1px;
+}
+
+/* section: boxer */
+#boxes {
+    margin-top: 20px;
+}
+#boxes .box {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+#boxes .box img {
+    width: 30%;
+}
+
+/* Footer */
+footer {
+    background-color: #E8491D;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* ABOUT */
+/* main*/
+.main-content {
+    float: left;
+    width: 65%;
+}
+.aside {
+    margin-top: 35px;
+    float: right;
+    background-color: #35424A;
+    color: #FFF;
+    padding: 20px 20px;
+    width: 30%;
+
+}
+
+/* Services */
+div.main-col .box {
+    background-color: #E6E6E6;
+    width: 65%;
+    float: left;
+    padding: 20px 20px;
+    margin-bottom: 4px;
+    border: 0.5px solid rgb(177, 177, 177);
+ 
+}
+.aside-box {
+    margin-top: 10px;
+    float: right;
+    background-color: #35424A;
+    color: #FFF;
+    padding: 20px 20px;
+    width: 25%;
+}
+#services button {
+    height: 37px;
+    width: 120px;
+    color:#FFF;
+    background-color: #E8491D;
+    border: 0;
+    letter-spacing: 1px;
+}
+#services  #name, #services #email{
+    height: 27px;
+    width: 270px;
+
+}
+#services textarea{
+    height: 40px;
+    width: 270px;
+}
+#services h3.h3-form {
+    text-align: center;
+}
+#services input {
+    margin-bottom: 5px;
+}
