@@ -225,5 +225,22 @@ footer {
         margin-bottom: 2%;
 
     }
+
+    /* About */
+    .main-content {
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    .aside{
+        float: none;
+        text-align: center;
+        /* width: 90%; */
+        padding: 10px 0;
+        width: 100%;
+        margin: 0 auto
+
+    }
 }
   
